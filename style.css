@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;;
+    
+}
+
+#wrapper{
+
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container{
+
+    width: 1200px;
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+.navbar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.logo-img{
+
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.logo-text{
+
+    margin-left: -1.05rem;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.logo{
+    width: 80px;
+}
+
+.bookmarks{
+
+    display: flex;
+    gap: 2rem;
+}
+
+.bookmarks a{
+
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    font-size: 20px;
+}
+
+.bookmarks a:hover{
+
+    /* transform: scale(1.02); */
+    font-weight: bold;
+    transition: 0.8s;
+}
+
+.hero-section{
+
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 0 1rem;
+    margin: 4rem auto;
+    padding-bottom: 8rem;
+    gap: 5rem;
+}
+
+
+
+.section-heading{
+
+    user-select: none;
+    font-size: 7em;
+
+    font-weight: bold;
+    color: #E7E7E7;
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    transition: all 3s;
+}
+
+.section-content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.content-heading , .content-subHeading{
+
+    font-size: 40px;
+    font-weight: 100;
+    color: rgb(54, 66, 86);
+}
+
+.role{
+    color: rgb(104, 47, 156);
+    font-weight: bold;
+}
+
+.content-description{
+
+    margin-top: 1.25rem;
+    width: 70%;
+    font-weight: 300;
+}
+
+.btn-pink{
+
+    height: 50px;
+    width: 180px;
+    background-color: rgb(246, 100, 100);
+    box-shadow: 0px 0px 5px 1px gray;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    z-index: 1;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+
+.btn-pink::before{
+
+    content: "";
+    background-color: rgba(149, 5, 5, 0.782);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    border-radius: 20px;
+    transform: scaleX(0);
+    z-index: -1;
+    transition: all 0.5s ease-in;
+}
+
+.btn-pink:hover::before{
+
+    transform: scaleX(1) ;
+    opacity: 1;
+}
+.btn-pink:hover{
+    transform: scale(1.03);
+    color: #E7E7E7;
+}
+
+.hero-section-image{
+
+    position: relative; 
+    width: 550px;
+    height: 425px;
+
+}
+.absolute{
+    position: absolute;
+} 
+.mainimage{
+    height: 390px;
+    width: 345px;
+    padding: 2.5rem;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: sacleImage 5s linear  infinite;
+}
+.mainimage img{
+    z-index: -9;
+}
+
+@keyframes sacleImage {
+
+    0%{
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+    50%{
+        filter: grayscale(1);
+        transform: scale(1.1);
+        box-shadow: 3px 3px 10px black;
+    }
+    100%{
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+    
+}
+
+ 
