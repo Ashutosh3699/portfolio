@@ -555,7 +555,7 @@
     .section-content .btn-pink{
 
         position: absolute;
-        bottom: 7%;
+        bottom: -5%;
         left: 42%;
         /* margin-top: 6rem; */
     }
@@ -629,6 +629,7 @@
     display: flex;
     padding: 5rem;
     margin: 10rem auto;
+    margin-bottom: 9.2rem;
     gap: 30px;
     
 }
@@ -747,4 +748,91 @@
     .skills-faded-text{
         opacity: 0;
     }
+}
+
+
+.contact-me-container{
+
+    background-color: var(--bgColor);
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 1rem;
+}
+
+.contact-heading{
+
+    font-size: 80px;
+    color: #e84949;
+    font-weight: 600;
+    transform-origin: left;
+}
+
+.contact-subHeading{
+
+    font-size: 45px;
+    color: #8686a4;
+    font-weight: 700;
+    text-align: left;
+    line-height: 30px;
+}
+
+.form-section{
+
+    width: 90%;
+    /* margin: 0 auto; */
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.form-content{
+
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    gap: 30px;
+    margin: 2rem 5rem;
+}
+
+.form-1{
+
+    background-color: #f3f3f3;
+    height: 2.5rem;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px 2px rgb(81, 80, 80);
+    padding-left: 1rem;
+    font-size: large;
+    
+}
+
+#message{
+
+    background-color: #f3f3f3;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px 2px rgb(81, 80, 80);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: large;
+}
+
+@media (max-width: 1300px){
+
+    .contact-heading{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contact-subHeading{
+
+        font-size: 20px;
+        text-align: center;
+    }
+
 }
