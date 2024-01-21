@@ -189,10 +189,10 @@
 } 
 .mainimage{
     height: 390px;
-    width: 345px;
+    width: 335px;
     padding: 2.5rem;
     filter: grayscale(1);
-    transition: all 1s;
+    transition: sacleImage 1s;
     animation: sacleImage 5s linear  infinite;
 }
 .mainimage img{
@@ -256,9 +256,9 @@
 
 .dots{
 
-    bottom: -5%;
-    right: -5%;
-    animation: dotsmovement 6s linear 0s infinite ;
+    bottom: -20%;
+    right: -15%;
+    animation: dotsmovement 4s linear 0s infinite ;
 }
 
 @keyframes dotsmovement {
